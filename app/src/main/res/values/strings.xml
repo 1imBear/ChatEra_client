@@ -1,0 +1,34 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">ChatEra</string>
+
+    <!-- Global -->
+    <string name="cancel_btn">Cancel</string>
+    <string name="alert_txt">[Sample text]</string>
+    <string name="logout_btn">Logout</string>
+
+    <!-- User -->
+    <string name="user_name_txt">User Name</string>
+    <string name="user_passwd_txt">Password</string>
+    <string name="user_passwd2_txt">Confirm Password</string>
+
+    <!-- SignIn Form -->
+    <string name="login_title_txt">Sign In</string>
+    <string name="submit_btn">Login</string>
+
+    <!-- SignUp Form -->
+    <string name="register_title_txt">Sign Up Now</string>
+    <string name="register_btn">I\'m New</string>
+    <string name="signup_submit_btn">Sign Up</string>
+
+    <!-- Chat-->
+    <string name="chat_name_blank">[Title]</string>
+    <string name="chat_thumbnail_blank">[Thumbnail]</string>
+    <string name="chat_thumbnail_desc">[User Avatar Description]</string>
+
+    <!-- Message -->
+    <string name="message_send_btn">Send</string>
+    <string name="message_content_txt_blank">[Message]</string>
+    <string name="message_content_text">Ready to Chat !</string>
+
+</resources>
