@@ -131,6 +131,9 @@ class MessagesFragment : Fragment(), IDefaultListFragment {
 
     private fun getNew(){
         socketManager.getNew {
+            if(!it.privateKey.isNullOrBlank()){
+                KeysHandle.saveKey(requireContext(), chatId!!, it.privateKey!!)
+            }
             messageModels.add(it)
             onNewItem()
         }
