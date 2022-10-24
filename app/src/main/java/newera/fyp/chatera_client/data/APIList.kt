@@ -2,7 +2,7 @@ package newera.fyp.chatera_client.data
 
 object APIList {
     private const val PORT = 8080
-    const val BASE_URL = "https://chaterarld8480ni.ddns.net:$PORT"
+    const val BASE_URL = "https://chaterarld8480ni2.ddns.net:$PORT"
 
     object User {
         const val SIGN_IN = "$BASE_URL/auth/user"
