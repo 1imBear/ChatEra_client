@@ -4,7 +4,6 @@ import android.content.Context
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
 import io.ktor.client.plugins.contentnegotiation.*
-import io.ktor.serialization.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 import newera.fyp.chatera_client.R
@@ -27,11 +26,7 @@ class KtorHelper(
             }
             engine {
                 sslManager = { httpsURLConnection ->
-                    httpsURLConnection.sslSocketFactory = context.let {
-                        SslSettings.getSslContext(
-                            it
-                        )?.socketFactory
-                    }
+                    httpsURLConnection.sslSocketFactory = SslSettings.getSslContext(context)?.socketFactory
                 }
             }
         }
